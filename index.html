@@ -4,9 +4,6 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
   <title>Hello, world!</title>
 </head>
 
@@ -15,9 +12,9 @@
 
   <div id="app">
     <div>{{ info.time }}</div>
-    <div v-if="info.con=='0'">空いている</div>
-    <div v-else-if="info.con=='1'">やや混雑</div>
-    <div v-else-if="info.con=='2'">混雑</div>
+    <div v-show="info.con=='0'">空いている</div>
+    <div v-show="info.con=='1'">やや混雑</div>
+    <div v-show="info.con=='2'">混雑</div>
   </div>
   <!-- Optional JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>

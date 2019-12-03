@@ -11,15 +11,8 @@
   <h1>Hello, world!</h1>
 
   <div id="app">
-    {{ info }}
-    <ul id="sake">
-      <li v-for="(value,index) in sake">
-        {{ index +1 }}月は{{ value }}酒が飲めるぞ
-      </li>
-    </ul>
+    {{ info.data.title }}
   </div>
-
-
   <!-- Optional JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

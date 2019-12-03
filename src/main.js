@@ -8,6 +8,6 @@ new Vue({
     mounted() {
         axios
             .get('../assets/test.json') //ここにURLを入れる
-            .then(response => (this.info = response))
+            .then(response => (this.info = response.data))
     }
 })

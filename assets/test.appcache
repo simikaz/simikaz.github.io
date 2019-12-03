@@ -1,7 +1,6 @@
 CACHE MANIFEST
 #version:1.0.0
 CACHE:
-./test.json
 
 NETWORK:
 *
